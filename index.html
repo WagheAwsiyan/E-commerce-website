@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav id="nav">
+      <div class="logo">
+        <div class="right">
+          <img
+            src="https://th.bing.com/th?id=OIP.oWhx-dSqV_1WLOodGcBvgQHaH_&w=240&h=259&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+            alt=""
+          />
+          <h1>.snekaers</h1>
+        </div>
+        <div class="search">
+          <input type="search" placeholder="search" />
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <a href="#card" id="offer">Limited Offer</a>
+      </div>
+      <ul>
+        <li><a href="#">AIR FORCE</a></li>
+        <li><a href="#">JORDAN</a></li>
+        <li><a href="#">BLAZER</a></li>
+        <li><a href="#">CREATERHIPPIE</a></li>
+        <li><a href="#">HIPPIE</a></li>
+      </ul>
+    </nav>
+
+    <div class="home">
+      <div class="ball">
+        <img src="air.png" alt="" />
+      </div>
+
+      <a href="#buy" class="btn">BUY NOW!</a>
+      <p class="price">15999 Rs</p>
+      <p class="heading">AIR FORCE
+NEW 
+SEASON</p>
+    </div>
+    <!-- delivary section  -->
+    <div class="main">
+      <div class="services">
+        <img src="./shipping.png" alt="" />
+        <h3>FREE SHIPPING</h3>
+        <p>Free worldwide shipping on all order</p>
+      </div>
+      <div class="services">
+        <img src="./return.png" alt="" />
+        <h3>30 DAYS RETURN</h3>
+        <p>No question return and easy refund in 14 days</p>
+      </div>
+      <div class="services">
+        <img src="./gift.png" alt="" />
+        <h3>GIFT CARDS</h3>
+        <p>Buy gift card and use coupon codes essily</p>
+      </div>
+      <div class="services">
+        <img src="./contact.png" alt="" />
+        <h3>CONTACT US!</h3>
+        <p>Keep in touch vai email and support system</p>
+      </div>
+    </div>
+    <!-- buy product -->
+    <div class="buy-product" id="buy">
+      <div class="product">
+        <img src="air.png" alt="" />
+      </div>
+      <div class="pro-price">
+        <h2>AIR FORCE</h2>
+        <div class="p-price">
+          <p>999rs</p>
+        </div>
+        <div class="text">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            rem pariatur quis quam esse laborum
+          </p>
+        </div>
+        <div class="color">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="size">
+          <button>41</button>
+          <button>42</button>
+          <button>43</button>
+        </div>
+        <div class="button">
+          <button onclick="payment.showModal()" >BUY NOW!</button>
+        </div>
+      </div>
+    </div>
+    <div class="payment">
+      <dialog id="payment" >
+      
+<form action="" class="pay-form">
+  <h2>Personal Information</h2>
+  <button class="close-button" onclick="payment.close()" type="button">x</button>
+  <label for="name">Name and Surname</label>
+  <input type="text" name="name" id="" placeholder="john doe">
+  <label for="number">Phone Number</label>
+  <input type="number" name="number" id="" placeholder="+91 34 23">
+  <label for="addres">Address</label>
+  <input type="text" name="addres" id=""placeholder="mumbai goa highway">
+  <h2>Card Information</h2>
+  <div class="card-img">
+    <img src="visa.png" alt="">
+    <img src="master.png" alt="">
+  </div>
+  <input type="number" name="" id="" placeholder="card Number">
+  <button class="Checkout">Checkout!</button>
+</form>
+      </dialog>
+    </div>
+    <!-- cards section -->
+    <div class="card-container" id="card">
+    <div class="cards">
+      <div class="card">
+        <img src="air.png" alt="" />
+        <p>12990rs</p>
+        <div class="card-button">
+            <button>Add to cart</button>
+            <button onclick="payment.showModal()">Buy</button>
+          </div>
+      </div>
+      <div class="card">
+        <img src="air2.png" alt="" />
+        <p>14999rs</p>
+        <div class="card-button">
+            <button>Add to cart</button>
+            <button onclick="payment.showModal()">Buy</button>
+          </div>
+      </div>
+      <div class="card">
+        <img src="jordan.png" alt="" />
+        <p>23000rs</p>
+        <div class="card-button">
+            <button>Add to cart</button>
+            <button onclick="payment.showModal()">Buy</button>
+          </div>
+      </div>
+      <div class="card">
+        <img src="jordan2.png" alt="" />
+        <p>18000rs</p>
+        <div class="card-button">
+            <button>Add to cart</button>
+            <button onclick="payment.showModal()">Buy</button>
+          </div>
+      </div>
+    </div>
+
+
+      <div class="cards">
+        <div class="card">
+          <img src="air.png" alt="" />
+          <p>12990rs</p>
+          <div class="card-button">
+              <button>Add to cart</button>
+              <button onclick="payment.showModal()">Buy</button>
+            </div>
+        </div>
+        <div class="card">
+          <img src="air2.png" alt="" />
+          <p>14999rs</p>
+          <div class="card-button">
+              <button>Add to cart</button>
+              <button onclick="payment.showModal()">Buy</button>
+            </div>
+        </div>
+        <div class="card">
+          <img src="jordan.png" alt="" />
+          <p>23000rs</p>
+          <div class="card-button">
+              <button>Add to cart</button>
+              <button onclick="payment.showModal()">Buy</button>
+            </div>
+        </div>
+        <div class="card">
+          <img src="jordan2.png" alt="" />
+          <p>18000rs</p>
+          <div class="card-button">
+              <button>Add to cart</button>
+              <button onclick="payment.showModal()">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="styling">
+      <div class="style">
+        <p>Be yourself!</p>
+        <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+      </div>
+      <div class="style">
+        <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+        <p>This is the First Day
+of Your New Life</p>
+      </div>
+      <div class="style">
+        <p>Just Do it!</p>
+        <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+      </div>
+    </div>
+
+
+    <!-- new season section -->
+    
+    <div class="newSeason">
+      <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+      <div class="seasonContent">
+        <p>WINTER NEW ARRIVALS</p>
+        <h1>NEW SEASON</h1>
+        <h2>New Collection</h2>
+        <a href="#nav">Choose Product</a>
+      </div>
+      <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+
+    </div>
+    
+    <div class="footer">
+      <div class="footerlinks">
+        <p>About us</p>
+        <ul>
+          <li>Company</li>
+          <li>Contact</li>
+          <li>Careers</li>
+          <li>Affiliates</li>
+          <li>Store</li>
+        </ul>
+
+      </div>
+      <div class="footerlinks">
+        <p>Useful Link</p>
+        <ul>
+          <li>Support</li>
+          <li>Refund</li>
+          <li>FAQ</li>
+          <li>Feedback</li>
+          <li>Stories</li>
+        </ul>
+      </div>
+      <div class="footerlinks">
+        <p>Products</p>
+        <ul>
+          <li>Air Force</li>
+          <li>Air Jordan</li>
+          <li>Blazer</li>
+          <li>Crater</li>
+          <li>Hippie</li>
+        </ul>
+      </div>
+      <div class="footerlinks">
+        <p>Subscribe to our newsletter</p>
+        <div class="footerForm">
+          <input type="email" name="" id="" placeholder="your@gmail.com">
+          <button>Join!</button>
+        </div>
+        <h4>Follow Us</h4>
+        <div class="footerIcons">
+          <img src="facebook.png" alt="" class="fIcon">
+          <img src="twitter.png" alt="" class="fIcon">
+          <img src="instagram.png" alt="" class="fIcon">
+          <img src="whatsapp.png" alt="" class="fIcon">
+        </div>
+        <p id="copyright">@.sneakers all rights are reserved</p>
+      </div>
+    </div>
+  </body>
+</html>
